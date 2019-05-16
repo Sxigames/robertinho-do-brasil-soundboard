@@ -1,9 +1,7 @@
 <!DOCTYPE html>
  
 <head>
-	<title>SoundBoard</title>
-    <script src="index.js"></script> 
-    <link rel="stylesheet" href="style.css">
+	<title>Soundboard</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_green-amber.min.css"> 
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -17,15 +15,28 @@
     <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF"> -->
+    <meta name="description" content="Uma Soundboard do Robertinho do Brasil">
+    <meta property="og:title" content="Robertinho do Brasil Soundboard">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.robertinho-soundboard.tk/">
+    <meta property="og:image" content="https://i.ytimg.com/vi/d_q4ze-N0fA/hqdefault.jpg">
+    <meta property="og:description" content="Uma Soundboard do Robertinho do Brasil">
+    <meta name="twitter:title" content="Robertinho do Brasil Soundboard">
+    <meta name="twitter:image" content="https://i.ytimg.com/vi/d_q4ze-N0fA/hqdefault.jpg">
+    <meta name="twitter:description" content="Uma Soundboard do Robertinho do Brasil">
 </head>
  
 <body>
+        <audio id="sos" src="sos.wav"></audio>
+        <audio id="vemcantar" src="vemcantar.wav"></audio>
         <audio id="souroberto" src="souroberto.wav"></audio>
+        <audio src="robertos.wav" id="robertos"></audio>
         <audio id="afeganistao" src="afeganistao.wav"></audio>
+        <audio src="vamoscanta.wav" id="vamoscanta"></audio>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
           <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title mdl-text--white">Roberinho do Brasil Soundboard</span>
+            <span class="mdl-layout-title">Robertinho do Brasil Soundboard</span>
             </div>
              </header>
              <main class="mdl-layout__content">
@@ -36,6 +47,19 @@
                         <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" 
                         onclick="document.getElementById('afeganistao').play()">
                         <i class="material-icons">flag</i> Afeganistão</button>
+                        <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" 
+                        onclick="document.getElementById('vemcantar').play()">
+                        <i class="material-icons">micro</i>Vem cantar comigo</button>
+                        <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" 
+                        onclick="document.getElementById('sos').play()">
+                        <i class="material-icons">warning</i>SOS</button>
+                        <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" 
+                        onclick="document.getElementById('robertos').play()">
+                        <i class="material-icons">group</i>Robertos</button>
+                        <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" 
+                        onclick="document.getElementById('vamoscanta').play()">
+                        <i class="material-icons">micro</i>Vamos Cantando</button>
+
                         Em breve mais...
                 </div>
               </main>
