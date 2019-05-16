@@ -10,8 +10,8 @@ self.addEventListener('install', function (event) {
         '/robertos.wav',
         '/sos.wav',
         '/souroberto.wav',
-        'vemcantar.wav',
-        'vamoscanta',
+        '/vemcantar.wav',
+        '/vamoscanta.wav',
       ]);
     })
   )
