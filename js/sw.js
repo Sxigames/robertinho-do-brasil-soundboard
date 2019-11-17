@@ -1,4 +1,4 @@
-var CACHE_NAME = 'static-v1';
+var CACHE_NAME = 'static-v2';
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
@@ -6,12 +6,8 @@ self.addEventListener('install', function (event) {
       return cache.addAll([
         '/',
         '/index.html',
-        '/afeganistao.wav',
-        '/robertos.wav',
-        '/sos.wav',
-        '/souroberto.wav',
-        '/vemcantar.wav',
-        '/vamoscanta.wav',
+        '/audio/*',
+        '/js/*'
       ]);
     })
   )

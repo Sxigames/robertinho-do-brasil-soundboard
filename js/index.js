@@ -8,41 +8,43 @@ if ('serviceWorker' in navigator) {
         });
 }
 
-lowLag.init();
-lowLag.load("./audio/afeganistao.wav", "afg");
-lowLag.load("./audio/robertos.wav", "rbrs");
-lowLag.load("./audio/sos.wav", "sos");
-lowLag.load("./audio/souroberto.wav", "sr");
-lowLag.load("./audio/vamoscanta.wav", "vc");
-lowLag.load("./audio/vemcantar.wav", "vcg");
+$(document).ready(function() {
+    lowLag.init({'urlPrefix':'./audio/'});
+    lowLag.load(['afeganistao.wav'], 'afg');
+    lowLag.load(['robertos.wav'], 'rbrs');
+    lowLag.load(['sos.wav'], 'sos');
+    lowLag.load(['souroberto.wav'], 'sr');
+    lowLag.load(['vamoscanta.wav'], 'vc');
+    lowLag.load(['vemcantar.wav'], 'vcg');
+});
 
 function afg(){
-    lowLag.init();
-    lowLag.play("afg");
+    
+    lowLag.play('afg');
 };
 
 function rbrs(){
-    lowLag.init();
-    lowLag.play("rbrs");
+    
+    lowLag.play('rbrs');
 };
 
 function sos(){
-    lowLag.init();
-    lowLag.play("sos");
+    
+    lowLag.play('sos');
 };
 
 function sr(){
-    lowLag.init();
-    lowLag.play("sr");
+    
+    lowLag.play('sr');
 };
 
 function vc(){
-    lowLag.init();
-    lowLag.play("vc");
+    
+    lowLag.play('vc');
 };
 
 function vcg(){
-    lowLag.init();
-    lowLag.play("vcg");
+    
+    lowLag.play('vcg');
 };
 
