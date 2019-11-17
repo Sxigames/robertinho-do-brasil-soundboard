@@ -28,6 +28,12 @@ self.addEventListener('activate', function activator(event) {
     );
   });
   
+  self.addEventListener('message', function (event) {
+  if (event.data.action === 'skipWaiting') {
+    self.skipWaiting();
+  }
+});
+
   self.addEventListener('fetch', function (event) {
     event.respondWith(
       caches.match(event.request).then(function (cachedResponse) {
