@@ -17,27 +17,15 @@
     <meta name="twitter:image" content="https://i.ytimg.com/vi/d_q4ze-N0fA/hqdefault.jpg">
     <meta name="twitter:description" content="Uma Soundboard do Robertinho do Brasil">
     <link rel="manifest" href="/manifest.json">
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js')
-          .then(function () {
-            console.log('service worker registered');
-          })
-          .catch(function () {
-            console.warn('service worker failed');
-          });
-      }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/lowlag.js"></script>
+    <script src="js/soundmanager2.js"></script>
+    <script src="js/index.js"></script>
+    
       <meta name="theme-color" content="#02a656"/>
 </head>
  
 <body class="mdl-color-text--white">
-        <audio id="sos" src="sos.wav"></audio>
-        <audio id="vemcantar" src="vemcantar.wav"></audio>
-        <audio id="souroberto" src="souroberto.wav"></audio>
-        <audio src="robertos.wav" id="robertos"></audio>
-        <audio id="afeganistao" src="afeganistao.wav"></audio>
-        <audio src="vamoscanta.wav" id="vamoscanta"></audio>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
           <div class="mdl-layout__header-row">
@@ -46,23 +34,23 @@
              </header>
              <main class="mdl-layout__content">
                 <div class="page-content mdl-grid">
-                    <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-cell" 
-                    onclick="document.getElementById('souroberto').play()">
+                    <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-cell" onclick="sr()"
+                    >
                     <i class="material-icons">accessibility_new </i>Sou Roberto</button>
                         <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-cell" 
-                        onclick="document.getElementById('afeganistao').play()">
+                        onclick="afg()">
                         <i class="material-icons">flag</i> Afeganistão</button>
                         <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-cell" 
-                        onclick="document.getElementById('vemcantar').play()">
+                        onclick="vcg()">
                         <i class="material-icons">mic</i>Vem cantar comigo</button>
                         <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-cell" 
-                        onclick="document.getElementById('sos').play()">
+                        onclick="sos()">
                         <i class="material-icons">warning</i>SOS</button>
                         <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-cell" 
-                        onclick="document.getElementById('robertos').play()">
+                        onclick="rbrs()">
                         <i class="material-icons">group</i>Robertos</button>
                         <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-cell" 
-                        onclick="document.getElementById('vamoscanta').play()">
+                        onclick="vc()">
                         <i class="material-icons">mic</i>Vamos Cantando</button>
 
                         Em breve mais...
